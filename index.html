@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <title>My first developer portfolio</title>
 </head>
+
 <body>
     <header>
-        <h1 class="my-title">Hi,<br> I am <span class="ms">Maryna Serdeshna</span>, <!---this sentence is inspired by a site https://alvarotrigo.com/blog/web-developer-portfolio-examples/ and specifically Item#3-->
-            <br> a full-stack web developer</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me" class="active">About me</a>
-                    </li>
-                    <li>
-                        <a href="#projects"class="active">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <h1 class="my-title">Hi,<br> I am <span class="ms">Maryna Serdeshna</span>,
+            <!---this sentence is inspired by a site https://alvarotrigo.com/blog/web-developer-portfolio-examples/ and specifically Item#3-->
+            <br> a full-stack web developer
+        </h1>
+        <nav>
+            <ul class="nav-bar">
+                <li>
+                    <a href="#about-me" class="active">About me</a>
+                </li>
+                <li>
+                    <a href="#projects" class="active">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="active">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="section">
-        <section id="about-me">
-            <h2>About me</h2>
-            <p> Hello</p>
+            <section id="about-me" class="section-about-me">
+                <h2>About me</h2>
+                <div class=" div-about-me">
+                <p>I am here to enhance my technical skills and dive deeper into the exciting world of web
+                    development.
+                    As a skilled and highly motivated client success professional with an unwavering thirst for
+                    knowledge, I have every confidence that I will excel in the field of full-stack web development.
+                </p>
+                <div class="headshot-container">
+                    <img class="headshot" src="./assets/images/IMG_9428.jpg" />
+                </div>
+        </div>
+
         </section>
-        <section id="projects">
-            <h3>Projects</h3>
+        <section id="projects" class="section-projects">
+            <h2>Projects</h2>
+            <div class="horiseon">
+                <div class="horiseon-title-description">
+                    <h3>Horiseon</h3>
+                    <p> A project for a thriving Web Marketing Agency. Features Web Responsive layout and elegant User
+                        Interface. </p>
+                </div>
+                <a href="https://marydesh.github.io/marynkas-great-job/" target="_blank"><img
+                        src="./assets/images/horiseon.png"
+                        alt="At the desk, a small team of people collaborates and works on laptops while having a discussion,on the table there are glasses filled with water"
+                        width="500" />
+                </a>
+                <div></div>
+                <div></div>
+            </div>
+
         </section>
-        <section id="Contact">
-            <ul>
+        <section id="contact">
+            <ul class="social-media">
                 <li>
                     <a href="https://www.linkedin.com/in/maryna-serdeshna" target="_blank">LinkedIn</a>
                 </li>
@@ -43,12 +75,13 @@
                 </li>
             </ul>
         </section>
-    </div>
+        </div>
 
     </main>
     <footer>
         <p> &copy; 2023 Copyright Maryna Serdeshna</p>
     </footer>
-    
+
 </body>
+
 </html>
