@@ -1,76 +1,80 @@
+/* for a CSS normalization on different browsers */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-    /* for a CSS normalization on different browsers */
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
+/* Styles for a whole page */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
 
-    /* Styles for a whole page */
-    html,
-    body {
-        padding: 0;
-        margin: 0;
-    }
+html {
+    background-image: linear-gradient(#19547b, #ffd89b);
+    font-size: medium;
+    font-family: 'Noto Serif Display', serif;
+    line-height: 1.5;
+}
 
-    html {
-        background-image: linear-gradient(#19547b, #ffd89b);
-        font-size: medium;
-        font-family: 'Noto Serif Display', serif;
-        line-height: 1.5;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
+/* Styles for header*/
+header {
+    display: flex;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    height: 30%;
+    /* for the transparent background used a resource in this YouTube video https://www.google.com/search?q=how+to+add+almost+clear+background+to+the+navigation+bar%3F&oq=how+to+add+almost+clear+background+to+the+navigation+bar%3F&aqs=chrome..69i57j33i160l4j33i299l2.17716j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:11177e6b,vid:eQ5SU6UN46w,st:0 */
+}
 
-    /* Styles for header*/
-    header {
-        display: flex;
-        top: 0;
-        padding: 10px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, .2);
-        height: 30%;
-        /* for the transparent background used help in this YouTube video https://www.google.com/search?q=how+to+add+almost+clear+background+to+the+navigation+bar%3F&oq=how+to+add+almost+clear+background+to+the+navigation+bar%3F&aqs=chrome..69i57j33i160l4j33i299l2.17716j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:11177e6b,vid:eQ5SU6UN46w,st:0 */
-    }
+/* Paragraph styles, edits for the text to not overflow*/
+p {
+    margin: auto 25px;
+    font-size: 15px;
+    min-width: 200px;
+    min-height: 200px;
+}
 
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 15px;
-    }
+h1.my-title {
+    font-size: 25px;
+    display: inline-block;
+    margin: 20px;
+}
 
-    /* Paragraph styles, for the text to not overflow*/
-    p {
-        margin: auto 25px;
-        font-size: 15px;
-        min-width: 200px;
-        min-height: 200px;
-    }
+.ms {
+    font-size: larger;
+}
 
-    h1.my-title {
-        font-size: 30px;
-        display: inline-block;
-        margin: 20px;
-    }
+h2 {
+    font-size: 16px;
+}
 
-    .ms {
-        font-size: larger;
-    }
+h3 {
+    font-size: 15px;
+}
 
-    /* Navigation bar styles - mobile first with NONE, but commented out initial styles that applied at a meadia screen section just in case i would need to chnage something*/
+h4 {
+    font-size: smaller;
+}
 
-    nav {
-        display: none;
-    }
+/* Navigation bar styles - mobile first with NONE, commented out initial styles that later applied at a meadia screen section, leaving them here just in case i would need to chnage something*/
 
-    /* nav{
+nav {
+    display: none;
+}
+
+/* nav{
     position: fixed;
     display:flex;
     align-items:center;
@@ -116,206 +120,254 @@ a {
     border-radius: 20px;
 } */
 
-    main {
-        display: inline-block;
-        /* margin-top: 30%; */
-        /* was trying to decrease spacing on top of the about me section, but still undesided, so commented this one out for now*/
-        padding: 0;
+main {
+    display: inline-block;
+    /* margin-top: 30%; */
+    /* was trying to decrease spacing on top of the about me section, but still undesided, so commented this one out for now*/
+    padding: 0;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.section-about-me {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.div-about-me {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+img.headshot {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-projects {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.horiseon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.horiseon-title-description {
+    text-align: center;
+    margin-top: 20px;
+    /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+}
+
+.horiseon-title-description h3 {
+    text-align: center;
+}
+
+.glow {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+
+}
+
+.glow img {
+    transition: box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.glow img:hover {
+    box-shadow: 0 0 10px 5px rgb(96, 104, 109);
+}
+
+#contact {
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media a {
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.social-media a:hover {
+    background-color: #19547b;
+    border-radius: 20px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    margin: 5px;
+}
+
+/* Media styles for smaller mobile devices */
+@media screen and (min-width: 375px) {
+    h1.my-title {
+        font-size: 32px;
+
     }
 
-    section {
-        margin-bottom: 20px;
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 25px
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .section-about-me,
+    .section-projects {
         padding: 20px;
-        /* height: 300px; */
+        margin-bottom: 30px;
     }
 
-    .section-about-me {
-        border: solid 2px red;
-    }
-
-
+    /*Editing section items to be in the column for a smaller screens */
     .div-about-me {
-        display: flex;
-        border: solid 2px black;
-        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .headshot {
-        width: 300px;
+        margin-top: 20px;
         border-radius: 150px;
     }
+}
 
-    .headshot-container {
+/* Media styles for a larger mibile devices plus desktop */
+@media screen and (min-width: 768px) {
+    h1.my-title {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    nav {
+        position: fixed;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        padding: 10px;
+        width: 100%;
     }
-    img.headshot {
-    max-width: 100%;
-    height: auto;
+
+    ul {
+        list-style-type: none;
     }
+
+    .nav-bar {
+        display: inline;
+        float: right;
+    }
+
+    .nav-bar li {
+        display: inline;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        float: right;
+        margin-right: 20px;
+    }
+
+    li a:hover {
+        background-color: #ffd89b
+    }
+
+    .active {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+    /* Moving the section items to be in the flex row on the larger screens */
+    .section-about-me,
     .section-projects {
-        border: solid 2px red;
+        padding: 50px;
+        margin-bottom: 60px;
     }
 
-    #projects {
-        display: flex;
-        flex-direction: column;
-        /* text-align: center;
-    padding: 80px; */
+    .div-about-me {
+        flex-direction: row;
+        align-items: center;
     }
 
-    .horiseon {
-        display: flex;
-        flex-direction: row-reverse;
+    .headshot {
+        /* margin-top: 20px; */
+        width: 100%;
+    }
+
+    img.project2 {
+        max-width: 50%;
+        height: auto;
     }
 
     .horiseon-title-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding: 18px;
     }
-
-    .horiseon-title-description h3 {
-        text-align: center;
-    }
-
-    .glow {
-        max-width: 100%;
-        height: auto;
-        overflow: hidden;
-        display: block;
-
-    }
-
-    .glow img {
-        transition: box-shadow 0.3s ease;
-        max-width: 100%;
-    }
-
-    .glow img:hover {
-        box-shadow: 0 0 10px 5px rgb(96, 104, 109);
-    }
-
-    #contact {
-        display: block;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .social-media {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .social-media a {
-        color: black;
-        text-decoration: none;
-        padding: 3px;
-    }
-
-    .social-media a:hover {
-        background-color: #19547b;
-        border-radius: 20px;
-
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
-        color: black;
-        margin: 5px;
-    }
-
-    h4 {
-        font-size: smaller;
-    }
-
-    /* media */
-    @media screen and (min-width: 992px) {
-
-        .section-about-me,
-        .section-projects {
-            padding: 50px;
-            margin-bottom: 60px;
-            font-size: 40px;
-        }
-    }
-
-    /* Large smartphones*/
-    @media screen and (min-width: 768px) {
-        h1.my-title {
-            font-size: 32px;
-        }
-
-        nav {
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 10px;
-            width: 100%;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        .nav-bar {
-            display: inline;
-            float: right;
-        }
-
-        .nav-bar li {
-            display: inline;
-            margin: 10px 0;
-        }
-
-        nav ul li {
-            display: block;
-            float: right;
-            margin-right: 20px;
-        }
-
-        li a:hover {
-            background-color: #ffd89b
-        }
-
-        .active {
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            padding: 8px 20px;
-            border-radius: 20px;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            padding: 8px 20px;
-            border-radius: 20px;
-        }
-
-        .section-about-me,
-        .section-projects {
-            padding: 30px;
-            margin-bottom: 40px;
-        }
-
-    }
-
-    /* @media screen and (min-width: 390px) {
-        h1.my-title {
-            font-size: 15px;
-        }
-        .section-about-me,
-        .section-projects {
-            padding: ;
-            margin-bottom: ;
-        }
-    } */
+}
