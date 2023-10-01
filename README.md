@@ -1,5 +1,8 @@
 # MY FIRST WEB DEVELOPER PORTFOLIO
 
+![The screenshot of the webpage](./assets/screenshot-portfolio.png)
+
+
 This is the first web developer portfolio I built and am proud of myself, but there is so much more to learn and work on ahead!
 
 * I tried building this page mobile-first responsive, for the users to be able to access it with a mobile device.
