@@ -1,67 +1,94 @@
-/* for a CSS normalization on different browsers */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
-/* Styles for a whole page */
-html,
-body {
-    padding: 0;
-    margin: 0;
-}
+    /* for a CSS normalization on different browsers */
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-html {
-    background-image: linear-gradient(#19547b, #ffd89b);
-    font-size: medium;
-    font-family: 'Noto Serif Display', serif;
-    line-height: 1.5;
-}
+    /* Styles for a whole page */
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
+    html {
+        background-image: linear-gradient(#19547b, #ffd89b);
+        font-size: medium;
+        font-family: 'Noto Serif Display', serif;
+        line-height: 1.5;
+    }
 
-/* Styles for header*/
-header {
-    display: flex;
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    /* Styles for header*/
+    header {
+        display: flex;
+        top: 0;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .2);
+        height: 30%;
+        /* for the transparent background used help in this YouTube video https://www.google.com/search?q=how+to+add+almost+clear+background+to+the+navigation+bar%3F&oq=how+to+add+almost+clear+background+to+the+navigation+bar%3F&aqs=chrome..69i57j33i160l4j33i299l2.17716j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:11177e6b,vid:eQ5SU6UN46w,st:0 */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+
+    /* Paragraph styles, for the text to not overflow*/
+    p {
+        margin: auto 25px;
+        font-size: 15px;
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    h1.my-title {
+        font-size: 30px;
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .ms {
+        font-size: larger;
+    }
+
+    /* Navigation bar styles - mobile first with NONE, but commented out initial styles that applied at a meadia screen section just in case i would need to chnage something*/
+
+    nav {
+        display: none;
+    }
+
+    /* nav{
     position: fixed;
-    top: 0;
-    padding: 25px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding: 10px;
     width: 100%;
-    background-color: rgba(0, 0, 0, .2);
-    height: 30%;
-    /* for the transparent background used help in this YouTube video https://www.google.com/search?q=how+to+add+almost+clear+background+to+the+navigation+bar%3F&oq=how+to+add+almost+clear+background+to+the+navigation+bar%3F&aqs=chrome..69i57j33i160l4j33i299l2.17716j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:11177e6b,vid:eQ5SU6UN46w,st:0 */
 }
-
-h2 {
-    font-size: 30px;
-}
-
-p {
-    margin: auto 25px;
-    font-size: 20px;
-}
-
-h1.my-title {
-    display: inline-block;
-    font-size: 40px;
-}
-
-.ms {
-    font-size: larger;
-}
-
-/* Navigation bar styles */
 ul {
     list-style-type: none;
 }
-
+.nav-bar {
+    display: inline;
+    float: right;
+}
+.nav-bar li {
+    display: inline;
+    margin: 10px 0;
+}
 nav ul li {
     display: block;
     float: right;
@@ -87,94 +114,208 @@ a {
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 20px;
-}
+} */
 
-.nav-bar {
-    display: inline;
-    float: right;
-}
+    main {
+        display: inline-block;
+        /* margin-top: 30%; */
+        /* was trying to decrease spacing on top of the about me section, but still undesided, so commented this one out for now*/
+        padding: 0;
+    }
 
-main {
-    display: inline-block;
-    margin-top: 30%;
-    padding: 0;
-}
+    section {
+        margin-bottom: 20px;
+        padding: 20px;
+        /* height: 300px; */
+    }
 
-section {
-    margin-bottom: 20px;
-    padding: 50px;
-    /* height: 300px; */
-}
-
-.section-about-me {
-    border: solid 2px red;
-}
+    .section-about-me {
+        border: solid 2px red;
+    }
 
 
-.div-about-me {
-    display: flex;
-    border: solid 2px black;
-    padding: 2rem;
-}
+    .div-about-me {
+        display: flex;
+        border: solid 2px black;
+        padding: 2rem;
+    }
 
-.headshot {
-    width: 300px;
-    border-radius: 150px;
-}
+    .headshot {
+        width: 300px;
+        border-radius: 150px;
+    }
 
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
+    .headshot-container {
+        display: flex;
+        align-items: center;
+    }
+    img.headshot {
+    max-width: 100%;
+    height: auto;
+    }
+    .section-projects {
+        border: solid 2px red;
+    }
 
-.section-projects {
-    border: solid 2px red;
-}
-
-#projects {
-    display: flex;
-    flex-direction: column;
-    /* text-align: center;
+    #projects {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center;
     padding: 80px; */
-}
+    }
 
-.horiseon {
-    display: flex;
-    flex-direction: row-reverse;
-}
+    .horiseon {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-.horiseon-title-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .horiseon-title-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.horiseon-title-description h3 {
-    text-align: center;
-}
+    .horiseon-title-description h3 {
+        text-align: center;
+    }
 
-#contact {
-    display: inline-block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-.social-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.social-media a {
-    padding: 3px;
-}
-.social-media a:hover {
-    background-color:#19547b;
-}
+    .glow {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: block;
 
-footer {
-    text-align: center;
-    padding: 10px;
-    color: black;
-}
+    }
+
+    .glow img {
+        transition: box-shadow 0.3s ease;
+        max-width: 100%;
+    }
+
+    .glow img:hover {
+        box-shadow: 0 0 10px 5px rgb(96, 104, 109);
+    }
+
+    #contact {
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-media a {
+        color: black;
+        text-decoration: none;
+        padding: 3px;
+    }
+
+    .social-media a:hover {
+        background-color: #19547b;
+        border-radius: 20px;
+
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        color: black;
+        margin: 5px;
+    }
+
+    h4 {
+        font-size: smaller;
+    }
+
+    /* media */
+    @media screen and (min-width: 992px) {
+
+        .section-about-me,
+        .section-projects {
+            padding: 50px;
+            margin-bottom: 60px;
+            font-size: 40px;
+        }
+    }
+
+    /* Large smartphones*/
+    @media screen and (min-width: 768px) {
+        h1.my-title {
+            font-size: 32px;
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 10px;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .nav-bar {
+            display: inline;
+            float: right;
+        }
+
+        .nav-bar li {
+            display: inline;
+            margin: 10px 0;
+        }
+
+        nav ul li {
+            display: block;
+            float: right;
+            margin-right: 20px;
+        }
+
+        li a:hover {
+            background-color: #ffd89b
+        }
+
+        .active {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+        }
+
+        .section-about-me,
+        .section-projects {
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    /* @media screen and (min-width: 390px) {
+        h1.my-title {
+            font-size: 15px;
+        }
+        .section-about-me,
+        .section-projects {
+            padding: ;
+            margin-bottom: ;
+        }
+    } */
